@@ -14,7 +14,7 @@
 def get_total_value(quantities, prices):
     total = 0
     for i in range(len(quantities)):
-        total = total + quantities[i] * prices[i]
+        total = total + (quantities[i] * prices[i])
     return total
 
 

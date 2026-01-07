@@ -1,8 +1,17 @@
 
 
 def find_momentum_days(prices):
+    changes = []
+    momentum_days = []
+    for i in range(1, len(prices)):
+        price_change = prices[i] - prices[i - 1]
+        changes.append(price_change)
+
+    for i in range (1, len(changes)):
+        if prices[i] > prices[i-1] and changes[i] > changes [i - 1]:
+            momentum_days.append(i)
     
-    pass
+    return momentum_days
 
 
 # Test
