@@ -45,11 +45,12 @@ import matplotlib.pyplot as plt
 # ERROR 4: Using label without legend
 # ============================================
 # Uncomment to see problem:
-# data1 = [85, 92, 78, 88, 95]
-# data2 = [78, 88, 75, 82, 91]
-# plt.hist(data1, bins=5, alpha=0.5, label="Math")
-# plt.hist(data2, bins=5, alpha=0.5, label="Science")
-# plt.show()
+#data1 = [85, 92, 78, 88, 95]
+#ata2 = [78, 88, 75, 82, 91]
+#plt.hist(data1, bins=5, alpha=0.5, label="Math")
+#plt.hist(data2, bins=5, alpha=0.5, label="Science")
+#plt.legend()
+#plt.show()
 # Labels exist but don't appear!
 
 # Fix: Add plt.legend() before plt.show()

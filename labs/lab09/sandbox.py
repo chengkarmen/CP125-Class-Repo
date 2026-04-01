@@ -8,11 +8,7 @@ as you work through the lab.
 import pandas as pd
 
 # Example: Create a simple DataFrame
-students = pd.DataFrame({
-    'Name': ["Ali", "Sara", "Ahmad", "Fatimah"],
-    'Math': [85, 92, 78, 88],
-    'Science': [78, 88, 82, 91]
-})
+df = pd.read_csv("labs/lab09/data/students.csv")
 
-print(students)
-print(f"\nAverage Math: {students['Math'].mean()}")
+max = df["Math"].max()
+print(df.loc[df["Math"] == max, "Name"])
